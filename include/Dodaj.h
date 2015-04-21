@@ -3,7 +3,7 @@
  
 using namespace std;
  
-// "Product"
+/// uzycie klasy 
 class Pizza
 {
 	public:
@@ -30,7 +30,7 @@ class Pizza
 		string m_topping;
 };
  
-// "Abstract Builder"
+
 class PizzaBuilder
 {
 	public:

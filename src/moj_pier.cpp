@@ -3,6 +3,7 @@
 
 using namespace std;
 
+/// wyswitla napis 
 void hello(){
    cout << "Hello World!";
 }

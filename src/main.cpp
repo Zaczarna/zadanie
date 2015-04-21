@@ -1,4 +1,4 @@
-// Justyna Olczak & Magdalena Oćwieja
+/// Justyna Olczak & Magdalena Oćwieja
 #include <iostream>
 #include "Dodaj.h"
 
