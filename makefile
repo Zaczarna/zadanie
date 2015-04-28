@@ -14,7 +14,7 @@ CFLAGS := -c -Wall
 INC := -I include
 
 # sprawdzic sobie
-.PHONY: run clean
+.PHONY: run clean doc
 
 # tworzy foldr build jesli go nie ma, kompiluje po kolei pliki zrodlowe do obiektow z rozszerzenie .o, 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
@@ -28,8 +28,12 @@ $(TARGET): $(OBJECTS)
 
 # czysci pliki tymczasow/posrednie
 clean:
-	-rm -f $(BUILDDIR)/*.o
+	-rm -rf $(BUILDDIR)
+	-rm -rf $(BINDIR)
 
 # uruchamia
-run:
+run: $(TARGET)
 	./$(BINDIR)/$(TARGET)
+
+doc:
+	doxygen Doxyfile

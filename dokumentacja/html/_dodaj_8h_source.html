@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>xxx: include/Dodaj.h Source File</title>
+<title>Zadanie21-04-2015: include/Dodaj.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">xxx
+   <div id="projectname">Zadanie21-04-2015
    </div>
   </td>
  </tr>
@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,17 +87,155 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Dodaj.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_dodaj_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_dodaj_8h.html#a27a1864e1f4693766ae2596e6e205731">hello</a>();</div>
-<div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="_dodaj_8h.html#a1247f78c381ecedc869ac7da3f659494">    2</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="_dodaj_8h.html#a1247f78c381ecedc869ac7da3f659494">wynik</a> = liczby();</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<a class="code" href="_dodaj_8h.html#a1247f78c381ecedc869ac7da3f659494">wynik</a> = liczby();</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;std::cout &lt;&lt;  liczby();</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;liczby();</div>
-<div class="ttc" id="_dodaj_8h_html_a27a1864e1f4693766ae2596e6e205731"><div class="ttname"><a href="_dodaj_8h.html#a27a1864e1f4693766ae2596e6e205731">hello</a></div><div class="ttdeci">void hello()</div><div class="ttdef"><b>Definition:</b> <a href="moj__pier_8cpp_source.html#l00006">moj_pier.cpp:6</a></div></div>
-<div class="ttc" id="_dodaj_8h_html_a1247f78c381ecedc869ac7da3f659494"><div class="ttname"><a href="_dodaj_8h.html#a1247f78c381ecedc869ac7da3f659494">wynik</a></div><div class="ttdeci">float wynik</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00002">Dodaj.h:2</a></div></div>
+<a href="_dodaj_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_pizza.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pizza.html">Pizza</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_pizza.html#a1a9bc97fa6c46d45d83134142773acb0">   10</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_pizza.html#a1a9bc97fa6c46d45d83134142773acb0">setDough</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; dough)</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            m_dough = dough;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        }</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_pizza.html#ad9d05760ea59099ee00d44006d0622f3">   14</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_pizza.html#ad9d05760ea59099ee00d44006d0622f3">setSauce</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sauce)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            m_sauce = sauce;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_pizza.html#adc9f4d67313151e14ad380324d56d43e">   18</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_pizza.html#adc9f4d67313151e14ad380324d56d43e">setTopping</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; topping)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            m_topping = topping;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_pizza.html#a7d812bc17133896f57459588988ffd47">   22</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_pizza.html#a7d812bc17133896f57459588988ffd47">open</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Pizza with &quot;</span> &lt;&lt; m_dough &lt;&lt; <span class="stringliteral">&quot; dough, &quot;</span> &lt;&lt; m_sauce &lt;&lt; <span class="stringliteral">&quot; sauce and &quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            &lt;&lt; m_topping &lt;&lt; <span class="stringliteral">&quot; topping. Mmm.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">string</span> m_dough;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">string</span> m_sauce;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">string</span> m_topping;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_pizza_builder.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pizza_builder.html">PizzaBuilder</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_pizza_builder.html#a424dc27395e06a4c38beca703c91c258">   37</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_pizza_builder.html#a424dc27395e06a4c38beca703c91c258">~PizzaBuilder</a>() {}; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_pizza_builder.html#a95ce87757351da71ab03f400802a0d1a">   39</a></span>&#160;        <a class="code" href="class_pizza.html">Pizza</a>* <a class="code" href="class_pizza_builder.html#a95ce87757351da71ab03f400802a0d1a">getPizza</a>()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">return</span> m_pizza;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_pizza_builder.html#ad321d7aede0131b349c6853768ea1735">   43</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_pizza_builder.html#ad321d7aede0131b349c6853768ea1735">createNewPizzaProduct</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            m_pizza = <span class="keyword">new</span> <a class="code" href="class_pizza.html">Pizza</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> buildDough() = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> buildSauce() = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> buildTopping() = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_pizza_builder.html#a095c1999e588b9db2d4fcec6e050e3a2">   51</a></span>&#160;        <a class="code" href="class_pizza.html">Pizza</a>* <a class="code" href="class_pizza_builder.html#a095c1999e588b9db2d4fcec6e050e3a2">m_pizza</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_hawaiian_pizza_builder.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hawaiian_pizza_builder.html">HawaiianPizzaBuilder</a> : <span class="keyword">public</span> <a class="code" href="class_pizza_builder.html">PizzaBuilder</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_hawaiian_pizza_builder.html#a621c6b7e508a206a5f85cea4e73fe747">   59</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_hawaiian_pizza_builder.html#a621c6b7e508a206a5f85cea4e73fe747">~HawaiianPizzaBuilder</a>() {}; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_hawaiian_pizza_builder.html#a0eddc6f115d76c24a9adfb86dc31a7cc">   61</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hawaiian_pizza_builder.html#a0eddc6f115d76c24a9adfb86dc31a7cc">buildDough</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            m_pizza-&gt;setDough(<span class="stringliteral">&quot;cross&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_hawaiian_pizza_builder.html#abcfc366ad0ffcec8e93e19807b8eef18">   65</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hawaiian_pizza_builder.html#abcfc366ad0ffcec8e93e19807b8eef18">buildSauce</a>()</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            m_pizza-&gt;setSauce(<span class="stringliteral">&quot;mild&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_hawaiian_pizza_builder.html#af069af5d54a18d099a6ea6a4382fb42b">   69</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_hawaiian_pizza_builder.html#af069af5d54a18d099a6ea6a4382fb42b">buildTopping</a>()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            m_pizza-&gt;setTopping(<span class="stringliteral">&quot;ham+pineapple&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_spicy_pizza_builder.html">   75</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_spicy_pizza_builder.html">SpicyPizzaBuilder</a> : <span class="keyword">public</span> <a class="code" href="class_pizza_builder.html">PizzaBuilder</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_spicy_pizza_builder.html#ada134c577c76bbe33589074d1eca989b">   78</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_spicy_pizza_builder.html#ada134c577c76bbe33589074d1eca989b">~SpicyPizzaBuilder</a>() {}; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_spicy_pizza_builder.html#a31a9b83aff106bf255cdd7b07428cc8f">   80</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_spicy_pizza_builder.html#a31a9b83aff106bf255cdd7b07428cc8f">buildDough</a>()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            m_pizza-&gt;setDough(<span class="stringliteral">&quot;pan baked&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_spicy_pizza_builder.html#a74a4d62a67d118b8bbe94721847f38b4">   84</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_spicy_pizza_builder.html#a74a4d62a67d118b8bbe94721847f38b4">buildSauce</a>()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            m_pizza-&gt;setSauce(<span class="stringliteral">&quot;hot&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_spicy_pizza_builder.html#a18fccc77e058f373deb851d61074df5b">   88</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_spicy_pizza_builder.html#a18fccc77e058f373deb851d61074df5b">buildTopping</a>()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            m_pizza-&gt;setTopping(<span class="stringliteral">&quot;pepperoni+salami&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_cook.html">   96</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cook.html">Cook</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_cook.html#a57fcfa5be4b939f32d71f33c7dd4f0d8">   99</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cook.html#a57fcfa5be4b939f32d71f33c7dd4f0d8">setPizzaBuilder</a>(<a class="code" href="class_pizza_builder.html">PizzaBuilder</a>* pb)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            m_pizzaBuilder = pb;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_cook.html#aa6432a14102bd7abe71e5caad7d78f02">  103</a></span>&#160;        <a class="code" href="class_pizza.html">Pizza</a>* <a class="code" href="class_cook.html#aa6432a14102bd7abe71e5caad7d78f02">getPizza</a>()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> m_pizzaBuilder-&gt;getPizza();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_cook.html#a3c69ec4743390aacf285bd7a34e40b41">  107</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cook.html#a3c69ec4743390aacf285bd7a34e40b41">constructPizza</a>()</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            m_pizzaBuilder-&gt;createNewPizzaProduct();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            m_pizzaBuilder-&gt;buildDough();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            m_pizzaBuilder-&gt;buildSauce();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            m_pizzaBuilder-&gt;buildTopping();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="class_pizza_builder.html">PizzaBuilder</a>* m_pizzaBuilder;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_dodaj_8h.html#a27a1864e1f4693766ae2596e6e205731">hello</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">float</span> <a class="code" href="_dodaj_8h.html#a9cdd0e7e4a1a3de1d5211b630254c08a">suma</a>(<span class="keywordtype">float</span> a, <span class="keywordtype">float</span> b);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="ttc" id="class_pizza_builder_html"><div class="ttname"><a href="class_pizza_builder.html">PizzaBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00034">Dodaj.h:34</a></div></div>
+<div class="ttc" id="class_hawaiian_pizza_builder_html_abcfc366ad0ffcec8e93e19807b8eef18"><div class="ttname"><a href="class_hawaiian_pizza_builder.html#abcfc366ad0ffcec8e93e19807b8eef18">HawaiianPizzaBuilder::buildSauce</a></div><div class="ttdeci">virtual void buildSauce()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00065">Dodaj.h:65</a></div></div>
+<div class="ttc" id="class_pizza_builder_html_a095c1999e588b9db2d4fcec6e050e3a2"><div class="ttname"><a href="class_pizza_builder.html#a095c1999e588b9db2d4fcec6e050e3a2">PizzaBuilder::m_pizza</a></div><div class="ttdeci">Pizza * m_pizza</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00051">Dodaj.h:51</a></div></div>
+<div class="ttc" id="class_pizza_html_a1a9bc97fa6c46d45d83134142773acb0"><div class="ttname"><a href="class_pizza.html#a1a9bc97fa6c46d45d83134142773acb0">Pizza::setDough</a></div><div class="ttdeci">void setDough(const string &amp;dough)</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00010">Dodaj.h:10</a></div></div>
+<div class="ttc" id="class_pizza_html_ad9d05760ea59099ee00d44006d0622f3"><div class="ttname"><a href="class_pizza.html#ad9d05760ea59099ee00d44006d0622f3">Pizza::setSauce</a></div><div class="ttdeci">void setSauce(const string &amp;sauce)</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00014">Dodaj.h:14</a></div></div>
+<div class="ttc" id="class_cook_html"><div class="ttname"><a href="class_cook.html">Cook</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00096">Dodaj.h:96</a></div></div>
+<div class="ttc" id="class_spicy_pizza_builder_html_a31a9b83aff106bf255cdd7b07428cc8f"><div class="ttname"><a href="class_spicy_pizza_builder.html#a31a9b83aff106bf255cdd7b07428cc8f">SpicyPizzaBuilder::buildDough</a></div><div class="ttdeci">virtual void buildDough()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00080">Dodaj.h:80</a></div></div>
+<div class="ttc" id="class_pizza_builder_html_a95ce87757351da71ab03f400802a0d1a"><div class="ttname"><a href="class_pizza_builder.html#a95ce87757351da71ab03f400802a0d1a">PizzaBuilder::getPizza</a></div><div class="ttdeci">Pizza * getPizza()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00039">Dodaj.h:39</a></div></div>
+<div class="ttc" id="class_hawaiian_pizza_builder_html_a0eddc6f115d76c24a9adfb86dc31a7cc"><div class="ttname"><a href="class_hawaiian_pizza_builder.html#a0eddc6f115d76c24a9adfb86dc31a7cc">HawaiianPizzaBuilder::buildDough</a></div><div class="ttdeci">virtual void buildDough()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00061">Dodaj.h:61</a></div></div>
+<div class="ttc" id="_dodaj_8h_html_a27a1864e1f4693766ae2596e6e205731"><div class="ttname"><a href="_dodaj_8h.html#a27a1864e1f4693766ae2596e6e205731">hello</a></div><div class="ttdeci">void hello()</div><div class="ttdoc">wyswitla napis </div><div class="ttdef"><b>Definition:</b> <a href="moj__pier_8cpp_source.html#l00007">moj_pier.cpp:7</a></div></div>
+<div class="ttc" id="class_pizza_html_adc9f4d67313151e14ad380324d56d43e"><div class="ttname"><a href="class_pizza.html#adc9f4d67313151e14ad380324d56d43e">Pizza::setTopping</a></div><div class="ttdeci">void setTopping(const string &amp;topping)</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00018">Dodaj.h:18</a></div></div>
+<div class="ttc" id="class_spicy_pizza_builder_html_a18fccc77e058f373deb851d61074df5b"><div class="ttname"><a href="class_spicy_pizza_builder.html#a18fccc77e058f373deb851d61074df5b">SpicyPizzaBuilder::buildTopping</a></div><div class="ttdeci">virtual void buildTopping()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00088">Dodaj.h:88</a></div></div>
+<div class="ttc" id="class_pizza_builder_html_a424dc27395e06a4c38beca703c91c258"><div class="ttname"><a href="class_pizza_builder.html#a424dc27395e06a4c38beca703c91c258">PizzaBuilder::~PizzaBuilder</a></div><div class="ttdeci">virtual ~PizzaBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00037">Dodaj.h:37</a></div></div>
+<div class="ttc" id="class_pizza_html_a7d812bc17133896f57459588988ffd47"><div class="ttname"><a href="class_pizza.html#a7d812bc17133896f57459588988ffd47">Pizza::open</a></div><div class="ttdeci">void open() const </div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00022">Dodaj.h:22</a></div></div>
+<div class="ttc" id="class_spicy_pizza_builder_html_a74a4d62a67d118b8bbe94721847f38b4"><div class="ttname"><a href="class_spicy_pizza_builder.html#a74a4d62a67d118b8bbe94721847f38b4">SpicyPizzaBuilder::buildSauce</a></div><div class="ttdeci">virtual void buildSauce()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00084">Dodaj.h:84</a></div></div>
+<div class="ttc" id="class_hawaiian_pizza_builder_html"><div class="ttname"><a href="class_hawaiian_pizza_builder.html">HawaiianPizzaBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00056">Dodaj.h:56</a></div></div>
+<div class="ttc" id="class_cook_html_a3c69ec4743390aacf285bd7a34e40b41"><div class="ttname"><a href="class_cook.html#a3c69ec4743390aacf285bd7a34e40b41">Cook::constructPizza</a></div><div class="ttdeci">void constructPizza()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00107">Dodaj.h:107</a></div></div>
+<div class="ttc" id="_dodaj_8h_html_a9cdd0e7e4a1a3de1d5211b630254c08a"><div class="ttname"><a href="_dodaj_8h.html#a9cdd0e7e4a1a3de1d5211b630254c08a">suma</a></div><div class="ttdeci">float suma(float a, float b)</div><div class="ttdoc">dodawanie dowolnych liczb </div><div class="ttdef"><b>Definition:</b> <a href="dodawanie_8cpp_source.html#l00004">dodawanie.cpp:4</a></div></div>
+<div class="ttc" id="class_cook_html_a57fcfa5be4b939f32d71f33c7dd4f0d8"><div class="ttname"><a href="class_cook.html#a57fcfa5be4b939f32d71f33c7dd4f0d8">Cook::setPizzaBuilder</a></div><div class="ttdeci">void setPizzaBuilder(PizzaBuilder *pb)</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00099">Dodaj.h:99</a></div></div>
+<div class="ttc" id="class_hawaiian_pizza_builder_html_a621c6b7e508a206a5f85cea4e73fe747"><div class="ttname"><a href="class_hawaiian_pizza_builder.html#a621c6b7e508a206a5f85cea4e73fe747">HawaiianPizzaBuilder::~HawaiianPizzaBuilder</a></div><div class="ttdeci">virtual ~HawaiianPizzaBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00059">Dodaj.h:59</a></div></div>
+<div class="ttc" id="class_hawaiian_pizza_builder_html_af069af5d54a18d099a6ea6a4382fb42b"><div class="ttname"><a href="class_hawaiian_pizza_builder.html#af069af5d54a18d099a6ea6a4382fb42b">HawaiianPizzaBuilder::buildTopping</a></div><div class="ttdeci">virtual void buildTopping()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00069">Dodaj.h:69</a></div></div>
+<div class="ttc" id="class_cook_html_aa6432a14102bd7abe71e5caad7d78f02"><div class="ttname"><a href="class_cook.html#aa6432a14102bd7abe71e5caad7d78f02">Cook::getPizza</a></div><div class="ttdeci">Pizza * getPizza()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00103">Dodaj.h:103</a></div></div>
+<div class="ttc" id="class_spicy_pizza_builder_html"><div class="ttname"><a href="class_spicy_pizza_builder.html">SpicyPizzaBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00075">Dodaj.h:75</a></div></div>
+<div class="ttc" id="class_pizza_builder_html_ad321d7aede0131b349c6853768ea1735"><div class="ttname"><a href="class_pizza_builder.html#ad321d7aede0131b349c6853768ea1735">PizzaBuilder::createNewPizzaProduct</a></div><div class="ttdeci">void createNewPizzaProduct()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00043">Dodaj.h:43</a></div></div>
+<div class="ttc" id="class_spicy_pizza_builder_html_ada134c577c76bbe33589074d1eca989b"><div class="ttname"><a href="class_spicy_pizza_builder.html#ada134c577c76bbe33589074d1eca989b">SpicyPizzaBuilder::~SpicyPizzaBuilder</a></div><div class="ttdeci">virtual ~SpicyPizzaBuilder()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00078">Dodaj.h:78</a></div></div>
+<div class="ttc" id="class_pizza_html"><div class="ttname"><a href="class_pizza.html">Pizza</a></div><div class="ttdoc">uzycie klasy </div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00007">Dodaj.h:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 21 2015 12:31:12 for xxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 28 2015 10:05:01 for Zadanie21-04-2015 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

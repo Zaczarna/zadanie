@@ -1,0 +1,127 @@
+\hypertarget{class_pizza_builder}{\section{Pizza\-Builder Class Reference}
+\label{class_pizza_builder}\index{Pizza\-Builder@{Pizza\-Builder}}
+}
+
+
+{\ttfamily \#include $<$Dodaj.\-h$>$}
+
+Inheritance diagram for Pizza\-Builder\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pizza_builder}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_pizza_builder_a424dc27395e06a4c38beca703c91c258}{$\sim$\-Pizza\-Builder} ()
+\item 
+\hyperlink{class_pizza}{Pizza} $\ast$ \hyperlink{class_pizza_builder_a95ce87757351da71ab03f400802a0d1a}{get\-Pizza} ()
+\item 
+void \hyperlink{class_pizza_builder_ad321d7aede0131b349c6853768ea1735}{create\-New\-Pizza\-Product} ()
+\item 
+virtual void \hyperlink{class_pizza_builder_ab779fb4306ae03b3d82690f5939aaf22}{build\-Dough} ()=0
+\item 
+virtual void \hyperlink{class_pizza_builder_a87b3cc72715e7775c8b36e610e8bb389}{build\-Sauce} ()=0
+\item 
+virtual void \hyperlink{class_pizza_builder_a46ff797a62789eca327a9ffab95b1b23}{build\-Topping} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pizza}{Pizza} $\ast$ \hyperlink{class_pizza_builder_a095c1999e588b9db2d4fcec6e050e3a2}{m\-\_\-pizza}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 34 of file Dodaj.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pizza_builder_a424dc27395e06a4c38beca703c91c258}{\index{Pizza\-Builder@{Pizza\-Builder}!$\sim$\-Pizza\-Builder@{$\sim$\-Pizza\-Builder}}
+\index{$\sim$\-Pizza\-Builder@{$\sim$\-Pizza\-Builder}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{$\sim$\-Pizza\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}virtual Pizza\-Builder\-::$\sim$\-Pizza\-Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_pizza_builder_a424dc27395e06a4c38beca703c91c258}
+
+
+Definition at line 37 of file Dodaj.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pizza_builder_ab779fb4306ae03b3d82690f5939aaf22}{\index{Pizza\-Builder@{Pizza\-Builder}!build\-Dough@{build\-Dough}}
+\index{build\-Dough@{build\-Dough}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{build\-Dough}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pizza\-Builder\-::build\-Dough (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_pizza_builder_ab779fb4306ae03b3d82690f5939aaf22}
+
+
+Implemented in \hyperlink{class_spicy_pizza_builder_a31a9b83aff106bf255cdd7b07428cc8f}{Spicy\-Pizza\-Builder}, and \hyperlink{class_hawaiian_pizza_builder_a0eddc6f115d76c24a9adfb86dc31a7cc}{Hawaiian\-Pizza\-Builder}.
+
+\hypertarget{class_pizza_builder_a87b3cc72715e7775c8b36e610e8bb389}{\index{Pizza\-Builder@{Pizza\-Builder}!build\-Sauce@{build\-Sauce}}
+\index{build\-Sauce@{build\-Sauce}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{build\-Sauce}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pizza\-Builder\-::build\-Sauce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_pizza_builder_a87b3cc72715e7775c8b36e610e8bb389}
+
+
+Implemented in \hyperlink{class_spicy_pizza_builder_a74a4d62a67d118b8bbe94721847f38b4}{Spicy\-Pizza\-Builder}, and \hyperlink{class_hawaiian_pizza_builder_abcfc366ad0ffcec8e93e19807b8eef18}{Hawaiian\-Pizza\-Builder}.
+
+\hypertarget{class_pizza_builder_a46ff797a62789eca327a9ffab95b1b23}{\index{Pizza\-Builder@{Pizza\-Builder}!build\-Topping@{build\-Topping}}
+\index{build\-Topping@{build\-Topping}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{build\-Topping}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Pizza\-Builder\-::build\-Topping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_pizza_builder_a46ff797a62789eca327a9ffab95b1b23}
+
+
+Implemented in \hyperlink{class_spicy_pizza_builder_a18fccc77e058f373deb851d61074df5b}{Spicy\-Pizza\-Builder}, and \hyperlink{class_hawaiian_pizza_builder_af069af5d54a18d099a6ea6a4382fb42b}{Hawaiian\-Pizza\-Builder}.
+
+\hypertarget{class_pizza_builder_ad321d7aede0131b349c6853768ea1735}{\index{Pizza\-Builder@{Pizza\-Builder}!create\-New\-Pizza\-Product@{create\-New\-Pizza\-Product}}
+\index{create\-New\-Pizza\-Product@{create\-New\-Pizza\-Product}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{create\-New\-Pizza\-Product}]{\setlength{\rightskip}{0pt plus 5cm}void Pizza\-Builder\-::create\-New\-Pizza\-Product (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_pizza_builder_ad321d7aede0131b349c6853768ea1735}
+
+
+Definition at line 43 of file Dodaj.\-h.
+
+\hypertarget{class_pizza_builder_a95ce87757351da71ab03f400802a0d1a}{\index{Pizza\-Builder@{Pizza\-Builder}!get\-Pizza@{get\-Pizza}}
+\index{get\-Pizza@{get\-Pizza}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{get\-Pizza}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pizza}$\ast$ Pizza\-Builder\-::get\-Pizza (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_pizza_builder_a95ce87757351da71ab03f400802a0d1a}
+
+
+Definition at line 39 of file Dodaj.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_pizza_builder_a095c1999e588b9db2d4fcec6e050e3a2}{\index{Pizza\-Builder@{Pizza\-Builder}!m\-\_\-pizza@{m\-\_\-pizza}}
+\index{m\-\_\-pizza@{m\-\_\-pizza}!PizzaBuilder@{Pizza\-Builder}}
+\subsubsection[{m\-\_\-pizza}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pizza}$\ast$ Pizza\-Builder\-::m\-\_\-pizza\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_pizza_builder_a095c1999e588b9db2d4fcec6e050e3a2}
+
+
+Definition at line 51 of file Dodaj.\-h.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_dodaj_8h}{Dodaj.\-h}\end{DoxyCompactItemize}

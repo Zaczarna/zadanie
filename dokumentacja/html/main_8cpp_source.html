@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>xxx: src/main.cpp Source File</title>
+<title>Zadanie21-04-2015: src/main.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">xxx
+   <div id="projectname">Zadanie21-04-2015
    </div>
   </td>
  </tr>
@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -67,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,8 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">main.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Justyna Olczak &amp; Magdalena Oćwieja</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_dodaj_8h.html">Dodaj.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
@@ -95,18 +95,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    7</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="moj__pier_8cpp.html#a27a1864e1f4693766ae2596e6e205731">hello</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std:cout &lt;&lt; <span class="stringliteral">&quot;Wprowadz dwie liczby: &quot;</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">float</span> tu_wynik = liczby();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Wynik dodawnia wynosi: &quot;</span> &lt;&lt; tu_wynik &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    cout &lt;&lt; <a class="code" href="dodawanie_8cpp.html#a9cdd0e7e4a1a3de1d5211b630254c08a">suma</a>(3,5);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_cook.html">Cook</a> cook;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_pizza_builder.html">PizzaBuilder</a>* hawaiianPizzaBuilder = <span class="keyword">new</span> <a class="code" href="class_hawaiian_pizza_builder.html">HawaiianPizzaBuilder</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_pizza_builder.html">PizzaBuilder</a>* spicyPizzaBuilder   = <span class="keyword">new</span> <a class="code" href="class_spicy_pizza_builder.html">SpicyPizzaBuilder</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    cook.<a class="code" href="class_cook.html#a57fcfa5be4b939f32d71f33c7dd4f0d8">setPizzaBuilder</a>(hawaiianPizzaBuilder);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    cook.<a class="code" href="class_cook.html#a3c69ec4743390aacf285bd7a34e40b41">constructPizza</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_pizza.html">Pizza</a>* hawaiian = cook.<a class="code" href="class_cook.html#aa6432a14102bd7abe71e5caad7d78f02">getPizza</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    hawaiian-&gt;<a class="code" href="class_pizza.html#a7d812bc17133896f57459588988ffd47">open</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    cook.<a class="code" href="class_cook.html#a57fcfa5be4b939f32d71f33c7dd4f0d8">setPizzaBuilder</a>(spicyPizzaBuilder);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    cook.<a class="code" href="class_cook.html#a3c69ec4743390aacf285bd7a34e40b41">constructPizza</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_pizza.html">Pizza</a>* spicy = cook.<a class="code" href="class_cook.html#aa6432a14102bd7abe71e5caad7d78f02">getPizza</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    spicy-&gt;<a class="code" href="class_pizza.html#a7d812bc17133896f57459588988ffd47">open</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">delete</span> hawaiianPizzaBuilder;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">delete</span> spicyPizzaBuilder;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">delete</span> hawaiian;  </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">delete</span> spicy; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="ttc" id="class_pizza_builder_html"><div class="ttname"><a href="class_pizza_builder.html">PizzaBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00034">Dodaj.h:34</a></div></div>
+<div class="ttc" id="class_cook_html"><div class="ttname"><a href="class_cook.html">Cook</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00096">Dodaj.h:96</a></div></div>
 <div class="ttc" id="_dodaj_8h_html"><div class="ttname"><a href="_dodaj_8h.html">Dodaj.h</a></div></div>
-<div class="ttc" id="moj__pier_8cpp_html_a27a1864e1f4693766ae2596e6e205731"><div class="ttname"><a href="moj__pier_8cpp.html#a27a1864e1f4693766ae2596e6e205731">hello</a></div><div class="ttdeci">void hello()</div><div class="ttdef"><b>Definition:</b> <a href="moj__pier_8cpp_source.html#l00006">moj_pier.cpp:6</a></div></div>
+<div class="ttc" id="moj__pier_8cpp_html_a27a1864e1f4693766ae2596e6e205731"><div class="ttname"><a href="moj__pier_8cpp.html#a27a1864e1f4693766ae2596e6e205731">hello</a></div><div class="ttdeci">void hello()</div><div class="ttdoc">wyswitla napis </div><div class="ttdef"><b>Definition:</b> <a href="moj__pier_8cpp_source.html#l00007">moj_pier.cpp:7</a></div></div>
+<div class="ttc" id="class_pizza_html_a7d812bc17133896f57459588988ffd47"><div class="ttname"><a href="class_pizza.html#a7d812bc17133896f57459588988ffd47">Pizza::open</a></div><div class="ttdeci">void open() const </div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00022">Dodaj.h:22</a></div></div>
 <div class="ttc" id="main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00007">main.cpp:7</a></div></div>
+<div class="ttc" id="class_hawaiian_pizza_builder_html"><div class="ttname"><a href="class_hawaiian_pizza_builder.html">HawaiianPizzaBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00056">Dodaj.h:56</a></div></div>
+<div class="ttc" id="class_cook_html_a3c69ec4743390aacf285bd7a34e40b41"><div class="ttname"><a href="class_cook.html#a3c69ec4743390aacf285bd7a34e40b41">Cook::constructPizza</a></div><div class="ttdeci">void constructPizza()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00107">Dodaj.h:107</a></div></div>
+<div class="ttc" id="class_cook_html_a57fcfa5be4b939f32d71f33c7dd4f0d8"><div class="ttname"><a href="class_cook.html#a57fcfa5be4b939f32d71f33c7dd4f0d8">Cook::setPizzaBuilder</a></div><div class="ttdeci">void setPizzaBuilder(PizzaBuilder *pb)</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00099">Dodaj.h:99</a></div></div>
+<div class="ttc" id="dodawanie_8cpp_html_a9cdd0e7e4a1a3de1d5211b630254c08a"><div class="ttname"><a href="dodawanie_8cpp.html#a9cdd0e7e4a1a3de1d5211b630254c08a">suma</a></div><div class="ttdeci">float suma(float a, float b)</div><div class="ttdoc">dodawanie dowolnych liczb </div><div class="ttdef"><b>Definition:</b> <a href="dodawanie_8cpp_source.html#l00004">dodawanie.cpp:4</a></div></div>
+<div class="ttc" id="class_cook_html_aa6432a14102bd7abe71e5caad7d78f02"><div class="ttname"><a href="class_cook.html#aa6432a14102bd7abe71e5caad7d78f02">Cook::getPizza</a></div><div class="ttdeci">Pizza * getPizza()</div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00103">Dodaj.h:103</a></div></div>
+<div class="ttc" id="class_spicy_pizza_builder_html"><div class="ttname"><a href="class_spicy_pizza_builder.html">SpicyPizzaBuilder</a></div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00075">Dodaj.h:75</a></div></div>
+<div class="ttc" id="class_pizza_html"><div class="ttname"><a href="class_pizza.html">Pizza</a></div><div class="ttdoc">uzycie klasy </div><div class="ttdef"><b>Definition:</b> <a href="_dodaj_8h_source.html#l00007">Dodaj.h:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 21 2015 12:31:12 for xxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 28 2015 10:05:01 for Zadanie21-04-2015 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
